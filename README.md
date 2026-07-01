@@ -109,7 +109,7 @@ PulseSeq/
 ├── gre_analysis.py       # K-space trajectory, validation, reconstruction
 ├── gre_sequence.seq      # Scanner-ready sequence file (Pulseq format)
 ├── kspace_trajectory.png # K-space trajectory plot
-├── gre_reconstruction.png# Phantom simulation and reconstruction
+├── gre_reconstruction1.png# Phantom simulation and reconstruction
 └── README.md
 ```
 
