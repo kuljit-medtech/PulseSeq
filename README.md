@@ -60,7 +60,7 @@ A complete 2D gradient echo pulse sequence with:
 - **Right:** Uniform 64×64 grid of sampled k-space points confirming correct sequence design
 
 ### Image Reconstruction
-![GRE Reconstruction](gre_reconstruction.png)
+![GRE Reconstruction](gre_reconstruction1.png)
 
 - **Left:** Original Shepp-Logan phantom (ground truth)
 - **Middle:** Simulated k-space (log magnitude) — bright centre = low spatial frequencies (contrast), dark edges = high spatial frequencies (detail)
