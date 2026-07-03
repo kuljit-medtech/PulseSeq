@@ -57,8 +57,9 @@ A complete 2D gradient echo pulse sequence with:
 
 ### Sequence Timing Diagram — Full Sequence (64 TRs)
 
-![Full Timing](gre_timing_full.png)
-![Full Gradients](gre_gradients_full.png)
+| RF / ADC | Gradients |
+|---|---|
+| ![Timing Full](gre_timing_full.png) | ![Gradients Full](gre_gradients_full.png) |
 
 The full sequence timing confirms:
 - **RF pulse** fires 64 times — once per TR ✅
@@ -71,8 +72,9 @@ The full sequence timing confirms:
 
 ### Single TR Detail — Zoomed View
 
-![Zoomed Timing](gre_timing_zoomed.png)
-![Zoomed Gradients](gre_gradients_zoomed.png)
+| RF / ADC Zoomed | Gradients Zoomed |
+|---|---|
+| ![Timing Zoomed](gre_timing_zoomed.png) | ![Gradients Zoomed](gre_gradients_zoomed.png) |
 
 The zoomed region (highlighted in the full sequence diagram) confirms correct intra-TR structure:
 - RF sinc pulse fires first with simultaneous Gz slice selection
@@ -83,6 +85,8 @@ The zoomed region (highlighted in the full sequence diagram) confirms correct in
 - TR timing respected throughout
 
 ---
+
+
 
 ### Hardware Validation
 
