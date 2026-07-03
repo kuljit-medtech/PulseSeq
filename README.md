@@ -154,50 +154,10 @@ C++ reader on scanner hardware — execution
 
 The `.seq` file generated (`gre_sequence.seq`) can be loaded directly onto any Pulseq-compatible MRI scanner including low-field systems.
 
----
-
-## Project Structure
-
-```
-PulseSeq/
-├── gre_sequence.py          # GRE pulse sequence design + timing diagram
-├── gre_analysis.py          # K-space trajectory, validation, reconstruction
-├── gre_sequence.seq         # Scanner-ready sequence file (Pulseq format)
-├── gre_timing_full.png      # Full sequence timing diagram (64 TRs)
-├── gre_gradients_full.png   # Full gradient waveforms (64 TRs)
-├── gre_timing_zoomed.png    # Single TR timing detail
-├── gre_gradients_zoomed.png # Single TR gradient detail
-├── kspace_trajectory.png    # K-space trajectory plot
-├── gre_reconstruction1.png  # Phantom simulation and reconstruction
-└── README.md
-```
 
 ---
 
-## Key Concepts Demonstrated
-
-- **RF Pulse Design** — Sinc pulse with Hamming apodization and time-bandwidth product control
-- **Gradient Design** — Trapezoidal gradients for slice selection, phase encoding, frequency encoding
-- **K-space Sampling** — Uniform Cartesian sampling with correct pre-phaser placement
-- **Sequence Timing** — TR/TE control, ADC delay alignment to gradient flat top
-- **Hardware Validation** — Gradient amplitude and slew rate limit checking
-- **Image Reconstruction** — 2D FFT-based reconstruction from simulated k-space data
-- **.seq File Export** — Universal scanner-ready format compatible with C++ Pulseq reader
-
----
-
-## Relevance to Low-Field MRI
-
-While this sequence was designed with standard parameters, the same principles apply directly to low-field MRI systems:
-
-- Larmor frequency scales linearly with B0 → RF pulse centre frequency adjusts accordingly
-- Lower SNR at low field → pulse sequence optimisation becomes more critical
-- PyPulseq `.seq` files are field-strength agnostic — the same format works across field strengths
-- Gradient and timing constraints can be directly adjusted in the `pp.Opts()` system definition
-
----
-
-## Related Portfolio Projects
+## My other Portfolio Projects
 
 | Project | Description | Tech | Link |
 |---|---|---|---|
