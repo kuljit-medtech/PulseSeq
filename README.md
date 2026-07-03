@@ -1,7 +1,7 @@
 # MRI Pulse Sequence Development — PyPulseq
 
 **Author:** Kuljit Singh | MS Medical Systems Engineering, Otto Von Guericke University, Magdeburg  
-**Target:** Werkstudent Position — MRI Pulse Sequence Development (NeoScan, OvGU)
+
 
 ---
 
