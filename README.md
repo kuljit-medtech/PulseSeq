@@ -62,11 +62,11 @@ A complete 2D gradient echo pulse sequence with:
 | ![Timing Full](gre_timing_full.png) | ![Gradients Full](gre_gradients_full.png) |
 
 The full sequence timing confirms:
-- **RF pulse** fires 64 times — once per TR ✅
-- **Gz** slice selection gradient fires with every RF pulse ✅
-- **Gy** phase encode gradient steps through 64 different values — one per k-space line ✅
-- **Gx** readout gradient consistent every TR ✅
-- **ADC** sampling window present every TR ✅
+- **RF pulse** fires 64 times — once per TR 
+- **Gz** slice selection gradient fires with every RF pulse 
+- **Gy** phase encode gradient steps through 64 different values — one per k-space line 
+- **Gx** readout gradient consistent every TR 
+- **ADC** sampling window present every TR 
 
 ---
 
