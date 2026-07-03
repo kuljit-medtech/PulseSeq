@@ -98,6 +98,17 @@ All gradient limits, slew rates and timing checks passed.
 All gradient amplitudes confirmed within 28 mT/m hardware limit.  
 All slew rates confirmed within 150 T/m/s hardware limit.  
 ADC timing confirmed aligned to gradient flat top — no sampling during ramps.
+**Validated against the following system constraints:**
+
+| Parameter | Limit Used | Typical Clinical Scanner |
+|---|---|---|
+| Max Gradient Strength | 28 mT/m | 20–45 mT/m |
+| Max Slew Rate | 150 T/m/s | 100–200 T/m/s |
+| RF Ringdown Time | 20 µs | scanner dependent |
+| RF Dead Time | 100 µs | scanner dependent |
+| ADC Dead Time | 10 µs | scanner dependent |
+
+These constraints are defined in `pp.Opts()` and represent conservative mid-field clinical scanner parameters. The same sequence can be re-validated against any specific scanner's hardware limits by updating the `pp.Opts()` values.
 
 ---
 
