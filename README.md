@@ -70,7 +70,7 @@ The full sequence timing confirms:
 
 ---
 
-### Single TR Detail — Zoomed View
+### Magnified TR Detail — Zoomed View
 
 | RF / ADC Zoomed | Gradients Zoomed |
 |---|---|
